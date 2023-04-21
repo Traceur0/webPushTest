@@ -4,6 +4,7 @@ const keys = webpush.generateVAPIDKeys();
 
 console.log(keys);
 
+// service_worker 등록 - navigator에서의 지원여부 확인
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("service_worker.js");
 }
